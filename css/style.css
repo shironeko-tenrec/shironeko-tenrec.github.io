@@ -1,0 +1,179 @@
+/* ====== 共通スタイル ====== */
+ 
+/* ページ全体の文字や背景 */
+body {
+  background: #f9f9f9;        /* 背景色 ごく薄いグレー*/
+  font-family: Georgia, serif;    /*ゴシック体フォント*/
+}
+ 
+/* ページ全体の幅を制限して横中央 */
+.container {
+  max-width: 800px;           /* ページの最大幅 */
+  margin: 0 auto;             /* 左右中央に配置 */
+  padding: 20px;              /* 内側に余白を作って文字や画像が端にくっつかないようにする */
+}
+ 
+/* ヘッダー部分 */
+header {
+  background: #555;           /* 背景色 黒に近い濃いグレー*/
+  color: #fff;               /* 文字色 */
+  padding: 1rem;              /* 内側余白 */
+}
+ 
+/* ヘッダー内のリンク */
+header nav a {
+  color: #fff;               /* 文字色 */
+  margin-right: 1rem;         /* リンク同士の間隔 */
+  text-decoration: none;      /* 下線を消す */
+}
+
+/* ====== home画像 ====== */
+.gallery img {
+  display: block;                /* 画像をブロックに変えて */
+  border-radius: 8px;            /* 角丸 */
+  margin-bottom: 0.5rem;         /* 下に少し余白 */
+  margin: 0 auto;                /* 横中央 */
+  max-width: 50%;                /* 3列表示 */
+  height: auto;                  /* アスペクト比を維持 */
+  border-radius: 12px;           /* 角丸をしっかり見せる */
+  background: #fff;              /* 画像未設定時にグレー背景を表示 */
+}
+
+/* ====== 作品リスト ====== */
+.gallery, .work {
+  margin: 3rem auto;             /* 上下の余白を少し広げて背景をチラ見せ */
+  border-bottom: 1px solid #ccc; /* 区切り線：標準的なグレー */
+  padding: 2rem 1rem;            /* 内側の余白：上下多めでふんわり見せる */
+  text-align: center;            /* 中のテキストや画像も中央揃え */
+  background-color: #f9f9f9;     /* 背景を白にして画像との境目を強調 */
+  max-width: 800px;              /* 幅を制限して中央に配置 */
+  border-radius: 12px;           /* セクションごとに角丸をつける */
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08); /* ふんわり影を追加 */
+}
+ 
+.work img {
+  display: block;                /* 画像をブロックに変えて */
+  border-radius: 8px;            /* 角丸 */
+  margin-bottom: 0.5rem;         /* 下に少し余白 */
+  margin: 0 auto;                /* 横中央 */
+  max-width: 90%;                /* 幅を少し縮めて角を見せやすく */
+  height: auto;                  /* アスペクト比を維持 */
+  border-radius: 12px;           /* 角丸をしっかり見せる */
+  background: #fff;              /* 画像未設定時にグレー背景を表示 */
+}
+ 
+.work h2 {
+  margin: 0.3rem 0;
+  font-size: 1.2rem;
+}
+ 
+.work p {
+  margin: 0;
+  color: #555;
+}
+ 
+/* ====== お知らせ ====== */
+.news {
+  max-width: 600px;                      /* 幅を制限 */
+  margin: 2rem auto;                     /* 上下に余白＋横中央 */
+  padding: 1rem;
+  background: #fff;                      /* 背景色　白 */
+  border-radius: 8px;                    /* 角丸 */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* 影をつける */
+}
+ 
+.news h2 {
+  text-align: center;            /* 見出しを中央 */
+  margin-bottom: 1rem;
+}
+ 
+.news ul {
+  list-style: none;              /* 丸点消す */
+  padding: 0;
+}
+ 
+.news li {
+  padding: 0.5rem 0;             /* 行間を少し空ける */
+  border-bottom: 1px solid #eee; /* 区切り線 */
+}
+ 
+.news li:last-child {
+  border-bottom: none;           /* 最後の線は消す */
+}
+
+/* =========================
+   About / Contact ページ用スタイル
+   ========================= */
+ 
+.about, .contact {               /*.about と .contact の両方に同じスタイルを当てる
+  background: #fff;              /* 背景色　白 カード風*/
+  padding: 2rem;                 /* 中の余白を広めにしてゆったり見せる */
+  border-radius: 12px;           /* カードの角を丸める */
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1); /* ふんわり影をつけて立体感 */
+  text-align: center;            /* 中央揃えで整える */
+  margin-top: 2rem;              /* ヘッダーとの間に余白をとる */
+}
+ 
+/* --- Contactフォーム全体 --- */
+.contact form {
+  margin-top: 1rem;              /* 見出しとフォームの間にスペース */
+}
+
+.contact a {
+  color #333;                 /* 文字色 */
+  margin-right: 1rem;         /* リンク同士の間隔 */
+  text-decoration: none;      /* 下線を消す */
+}
+ 
+/* --- 入力欄（input, textarea）共通設定 --- */
+.contact input,
+.contact textarea {
+  width: 90%;                    /* 横幅を広めに（画面幅の90%） */
+  padding: 0.5rem;               /* 中の文字の余白 */
+  border: 1px solid #ccc;        /* 枠線色　薄いグレー */
+  border-radius: 6px;            /* 少し角を丸める */
+  font-size: 1rem;               /* 標準的な文字サイズ */
+  font-family: sans-serif;       /* 読みやすいゴシック体 */
+  margin-bottom: 1rem;           /* 各項目の間に余白 */
+}
+ 
+/* --- テキストエリアだけ少し高さを確保 --- */
+.contact textarea {
+  height: 120px;                 /* メッセージ入力欄を見やすく */
+  resize: vertical;              /* ユーザーが上下にサイズ変更できるように */
+}
+ 
+/* --- 送信ボタン --- */
+.contact button {
+  display: inline-block;                  /* 中央寄せしやすい */
+  margin-top: 1rem;                       /* 上に少し余白 */
+  padding: 0.6rem 1.4rem;                 /* ボタン内の文字に余裕を持たせる */
+  border: none;                           /* 枠線なしでスッキリ */
+  border-radius: 6px;                     /* ボタンも少し丸く */
+  background-color: #222;                 /* 濃いグレーで統一感 */
+  color: #fff;                            /* 白文字 */
+  cursor: pointer;                        /* ホバー時にポインタ表示 */
+  font-size: 1rem;
+  transition: background-color 0.3s;      /* ホバー時の色変化をなめらかに */
+}
+ 
+/* --- ボタンにマウスを乗せたときの動き --- */
+.contact button:hover {
+  background-color: #444;                 /* 少し明るくして反応を見せる */
+}
+ 
+/* --- フォームのラベル部分（例：お名前、メールアドレス） --- */
+.contact label {
+  display: block;                         /* 各項目を縦並びに */
+  font-weight: bold;                      /* ラベル文字を太字に */
+  margin-bottom: 0.3rem;                  /* ラベルと入力欄の間に少し間隔 */
+  color: #333;                            /* 読みやすい濃いめの文字色 */
+}
+ 
+/* ====== フッター ====== */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #555;
+  color: #fff;
+}
